@@ -8,7 +8,12 @@ Collect and visualize [Geth](https://github.com/ethereum/go-ethereum) metrics wi
 > docker-compose up -d
 ```
 
-Runs Geth on the Görli testnet, Prometheus for data storage and Grafana for visualizing.
+Runs Geth ~~on the Görli testnet~~, Prometheus for data storage and Grafana for visualizing.
+
+With these parameters
+```bash
+--metrics --metrics.expensive --pprof --pprofaddr=0.0.0.0
+```
 
 Open [localhost:3000](http://localhost:3000) (admin:admin) to explore the Grafana metrics dashboard.
 
